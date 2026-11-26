@@ -4,9 +4,9 @@
 
 ## 改前 / 改后：用富士 mini 12 拍 40 厘米处的小物
 
-[打开手机对比页](https://allonlxl-bit.github.io/mogai-shuomingshu/) · [下载高清对比图](docs/mini12-comparison.png) · [对照富士原厂手册](https://www.instax.com/mini_12/assets/pdf/manual_wwen.pdf)
+[打开手机对比页](https://allonlxl-bit.github.io/mogai-shuomingshu/) · [下载高清对比图](docs/mini12-comparison.png) · [对照富士原厂手册](https://www.instax.com/mini_12/assets/pdf/manual_wwzhs.pdf#page=9)
 
-[![改前要按问题查部件图、近摄、灯态和取片章节；改后按图找到镜头环、充电灯和快门，三步完成近摄。](docs/mini12-comparison.png)](https://allonlxl-bit.github.io/mogai-shuomingshu/)
+[![左边是富士简体中文原版第 9 页，右边是标出镜头环、充电灯和快门的三步近摄操作卡。](docs/mini12-comparison.png)](https://allonlxl-bit.github.io/mogai-shuomingshu/)
 
 **[看一份做好的三步图解 →](examples/labels/README.md)**　打开随附的标签预览器，照三张图把「工具箱」改成四张，再切换方案验一次。
 
@@ -45,4 +45,4 @@ mkdir -p "$skill_root" &&
 
 [操作卡模板](skills/task-first-manual/references/operation-card.md)可直接改写。[审阅与修订表](skills/task-first-manual/references/review.md)附有[原页与裁图对照方法](skills/task-first-manual/references/review.md#裁图与成品走查)和可选的裁图小工具，帮助在排版前发现圈错按钮、相邻状态或插针的情况。
 
-本仓库的技能、示例程序、截图和文档以 [MIT 许可证](LICENSE)发布。使用技能制作其他产品手册时，该产品的图片与资料仍按各自授权使用。
+本仓库原创的技能、示例程序、截图和文档以 [MIT 许可证](LICENSE)发布。对比页和分享图中的原版说明书页面版权归富士胶片。使用技能制作其他产品手册时，该产品的图片与资料仍按各自授权使用。
