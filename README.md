@@ -1,6 +1,6 @@
 # 魔改复杂说明书成傻瓜式按步骤操作成你要的功能结果
 
-[WorkBuddy 安装与使用](#在-workbuddy-里用) · [Codex 安装与使用](#在-codex-里用)
+**[WorkBuddy 使用说明（下载、安装、做第一张操作卡）](docs/WORKBUDDY.md)** · [Codex 安装与使用](#在-codex-里用)
 
 **让第一次拿起专业设备的人，也能用它完成一件自己在乎的事。**
 
@@ -40,11 +40,7 @@
 
 ## 在 WorkBuddy 里用
 
-1. [下载 WorkBuddy 技能包（ZIP）](https://raw.githubusercontent.com/allonlxl-bit/mogai-shuomingshu/main/docs/task-first-manual.zip)，保留压缩包。
-2. 打开 WorkBuddy 桌面端，在「专家·技能·连接器」里选「技能」，点「添加技能 → 上传技能」，把刚下载的 ZIP 拖进去。打开「已安装」，找到并启用 `task-first-manual`。[WorkBuddy 官方图解](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
-3. 新建任务，在输入框键入 `/task-first-manual`，点选同名技能。看到技能名出现在输入框里，就可以写任务了。附上产品说明书、型号或照片，把要做的事写成一句话。例如：
-
-> 我用富士 instax mini 12，想拍桌上离镜头 40 厘米的摆件。请给我一张中文操作卡，图上指出镜头转到哪一档、等哪盏灯、按哪里拍、什么时候取照片。
+使用 WorkBuddy 桌面端，从下载到生成第一张 PDF 都可以在对话界面完成。[看 WorkBuddy 使用说明](docs/WORKBUDDY.md) · [直接下载技能包](https://raw.githubusercontent.com/allonlxl-bit/mogai-shuomingshu/main/docs/task-first-manual.zip)
 
 ## 在 Codex 里用
 
