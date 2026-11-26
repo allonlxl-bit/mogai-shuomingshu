@@ -37,6 +37,6 @@ mkdir -p "$skill_root" &&
 |怎么知道保存了、连上了、真的起作用了？|分别写读回、连接和实际动作；涉及实体运行时标明待实测之处。|
 |一页看得懂，为什么下一页卡住？|拿读者认可的一页作样本，逐步检查其余页面，再打开最终成品看图注与圈位。|
 
-[操作卡模板](skills/task-first-manual/references/operation-card.md)可直接改写。[审阅与修订表](skills/task-first-manual/references/review.md)适合在读者指出错配、漏图和步骤跳跃时使用。
+[操作卡模板](skills/task-first-manual/references/operation-card.md)可直接改写。[审阅与修订表](skills/task-first-manual/references/review.md)附有[原页与裁图对照方法](skills/task-first-manual/references/review.md#裁图与成品走查)和可选的裁图小工具，帮助在排版前发现圈错按钮、相邻状态或插针的情况。
 
 本仓库的技能、示例程序、截图和文档以 [MIT 许可证](LICENSE)发布。使用技能制作其他产品手册时，该产品的图片与资料仍按各自授权使用。
