@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>标签预览器</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 1.2rem; font: 1rem/1.55 system-ui, sans-serif; color: #152f31; background: #eaf1ef; }
+  main { max-width: 34rem; margin: 0 auto; padding: 1.5rem; background: white; border-radius: 12px; }
+  h1 { margin: 0 0 1.2rem; font-size: 1.65rem; }
+  h2 { font-size: 1.15rem; margin: 1.1rem 0 .5rem; }
+  label { display: block; font-weight: 650; }
+  select, input, button { font: inherit; padding: .35rem .6rem; border-radius: 5px; border: 1px solid #748a88; }
+  input { width: 6rem; }
+  button { color: white; border-color: #185b51; background: #185b51; cursor: pointer; }
+  .controls { display: flex; align-items: end; gap: 1rem; margin-top: .8rem; }
+  output { display: block; min-height: 1.6em; margin-top: .65rem; color: #246453; }
+  ol { display: grid; grid-template-columns: repeat(2,1fr); gap: .55rem; margin: 0; padding: 0; list-style: none; }
+  li { border: 1px dashed #809895; padding: .7rem; text-align: center; }
+</style>
+<main>
+  <h1>标签预览器</h1>
+  <label for="profile">当前方案</label>
+  <select id="profile"><option>书架</option><option>工具箱</option></select>
+  <form id="editor" class="controls">
+    <div><label for="count">标签张数</label><input id="count" type="number" min="1" max="8" required></div>
+    <button>保存并预览</button>
+  </form>
+  <output id="status" aria-live="polite"></output>
+  <h2 id="summary"></h2>
+  <ol id="labels"></ol>
+</main>
+<script>
+  const profile = document.querySelector('#profile');
+  const count = document.querySelector('#count');
+  const summary = document.querySelector('#summary');
+  const status = document.querySelector('#status');
+  const labels = document.querySelector('#labels');
+  function storageKey() { return 'task-first-manual.labels.v1.' + profile.value; }
+  function draw(total) {
+    summary.textContent = profile.value + ' · ' + total + ' 张';
+    labels.replaceChildren();
+    for (let index = 1; index <= total; index++) {
+      const label = document.createElement('li');
+      label.textContent = profile.value + ' ' + String(index).padStart(2, '0');
+      labels.append(label);
+    }
+  }
+  function load() {
+    let saved = null;
+    try {
+      saved = Number(localStorage.getItem(storageKey()));
+      status.textContent = '';
+    } catch {
+      status.textContent = '浏览器限制了本地存储。';
+    }
+    count.value = Number.isInteger(saved) && saved >= 1 && saved <= 8 ? saved : 1;
+    draw(Number(count.value));
+  }
+  profile.addEventListener('change', load);
+  document.querySelector('#editor').addEventListener('submit', event => {
+    event.preventDefault();
+    try {
+      localStorage.setItem(storageKey(), count.value);
+      status.textContent = '已保存 · ' + profile.value;
+    } catch {
+      status.textContent = '仅本次预览，浏览器未保存。';
+    }
+    draw(Number(count.value));
+  });
+  load();
+</script>
+</html>

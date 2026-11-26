@@ -1,0 +1,4 @@
+interface:
+  display_name: "指定功能图解手册"
+  short_description: "按实际型号和用户指定功能制作中文新手指南，逐步圈出位置、动作和成功反馈"
+  default_prompt: "用 $task-first-manual 把这个产品我指定的功能做成中文图解指南，让第一次使用的人也能照着操作并验证结果。"
