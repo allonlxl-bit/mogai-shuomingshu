@@ -2,6 +2,12 @@
 
 把“这产品有几十个功能，我只想用其中两个”变成一份能拿在手上照做的中文指南。适用于实体设备、软件和需要配套使用的多个产品。
 
+## 改前 / 改后：用富士 mini 12 拍 40 厘米处的小物
+
+[打开手机对比页](https://allonlxl-bit.github.io/mogai-shuomingshu/) · [下载高清对比图](docs/mini12-comparison.png) · [对照富士原厂手册](https://www.instax.com/mini_12/assets/pdf/manual_wwen.pdf)
+
+[![改前要按问题查部件图、近摄、灯态和取片章节；改后按图找到镜头环、充电灯和快门，三步完成近摄。](docs/mini12-comparison.png)](https://allonlxl-bit.github.io/mogai-shuomingshu/)
+
 **[看一份做好的三步图解 →](examples/labels/README.md)**　打开随附的标签预览器，照三张图把「工具箱」改成四张，再切换方案验一次。
 
 **[看一份实体产品操作卡 →](examples/watch-593/README.md)**　用卡西欧 593 手表演示“只调一个小时”，对照实体按键和屏幕闪动位置。
